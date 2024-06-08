@@ -1,0 +1,65 @@
+body {
+    background-color: #e0e0e0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333333;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    height: 150px;
+}
+
+.h1-container {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.upload-button-wrapper {
+    position: absolute;
+    left: 2%;
+    top: 25%;
+    height: 50%;
+    width: 75px;
+}
+
+
+.upload-button {
+    position: absolute;
+    background-color: darkgray;
+    height: 100%;
+    width: 100%;
+}
+
+    .upload-button:hover {
+        background-color: lightgray;
+    }
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.logout-btn {
+    position: absolute;
+    background-color: darkgray;
+    right: 2%;
+    top: 30%;
+    height: 40%;
+    width: 75px;
+}
+
+    .logout-btn:hover {
+        background-color: lightgray;
+    }
+
+    .logout-btn:active {
+        box-shadow: inset 0px 0px 5px #303030;
+    }
