@@ -92,7 +92,7 @@ class DataBaseConnection {
 
     public function getUploadedDocumentsByUsername($username) {
         $selectStatement = $this->connection->prepare("
-            SELECT * FROM " . "uploadeddocument" . " WHERE user = :username AND archived = false ORDER BY document_priority, category;");
+            SELECT * FROM " . "uploadeddocument" . " WHERE user = :username AND archived = false ORDER BY category,document_priority;");
 
         $selectStatement->execute(['username' => $username]);
 

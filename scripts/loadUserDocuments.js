@@ -99,7 +99,7 @@ class UploadedDocument {
             //const increase_priority_button_text = document.createTextNode('Увеличи приоритета');
 
             increase_priority_button.appendChild(priority_img);
-            increase_priority_button.addEventListener("click", increasePriority.bind(null, this.file_name));
+            increase_priority_button.addEventListener("click", increasPriority.bind(null, this.file_name));
             increase_priority_div.appendChild(increase_priority_button);
             document_div.appendChild(increase_priority_div);
         }
@@ -119,7 +119,7 @@ class UploadedDocument {
             priority_img.src = "images/decrease.png";
 
             decrease_priority_button.appendChild(priority_img);
-            decrease_priority_button.addEventListener("click", decreasePriority.bind(null, this.file_name));
+            decrease_priority_button.addEventListener("click", decreasPriority.bind(null, this.file_name));
             decrease_priority_div.appendChild(decrease_priority_button);
             document_div.appendChild(decrease_priority_div);
         }
@@ -200,7 +200,7 @@ function renderWelcomeDiv(username) {
 }
 
 
-function increasePriority(file, event) {
+function increasPriority(file, event) {
 
     clearAllMessages();
 
@@ -230,7 +230,7 @@ function increasePriority(file, event) {
         });
 }
 
-function decreasePriority(file, event) {
+function decreasPriority(file, event) {
 
     clearAllMessages();
 

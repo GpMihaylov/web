@@ -4,11 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
         case "all":
             loadAllDocuments();
             break;
-        case "NoCategory":
-        case "OtdelStudenti":
-        case "UchebenOtdel":
-        case "KandidatStudenti":
         case "Sesiq":
+        case "UchebenOtdel":
+        case "OtdelStudenti":
+        case "PersonalDocuments":
             showByCategory(url.searchParams.get('category'));
             break;
         default:
